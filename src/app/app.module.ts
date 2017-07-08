@@ -18,7 +18,6 @@ import { AppComponent } from './app.component';
 import { HeaderBarComponent } from './shared/components/header-bar/header-bar.component';
 import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
-import { EmployeeListComponent } from './shared/components/employee-list/employee-list.component';
 import { ProductDetailComponent } from './shared/components/product-detail/product-detail.component';
 import { ProductListComponent } from './shared/components/product-list/product-list.component';
 import { PageNotFoundComponent } from './shared/components/page-not-found/page-not-found.component';
@@ -35,7 +34,6 @@ import { MessageService } from './shared/services/message.service';
     HeaderBarComponent,
     NavBarComponent,
     FooterComponent,
-    EmployeeListComponent,
     ProductDetailComponent,
     ProductListComponent,
     PageNotFoundComponent,
