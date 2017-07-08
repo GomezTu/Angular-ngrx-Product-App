@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Employee } from '../models/employee';
+import { EmployeeService } from '../shared/services/employee.service';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-who-are-we',
@@ -6,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./who-are-we.component.scss']
 })
 export class WhoAreWeComponent implements OnInit {
+  employess: Observable<Employee[]>;
 
-  constructor() { }
+  constructor(
+    private service: EmployeeService
+  ) {
+    this.employess = service.employees;
+  }
 
   ngOnInit() {
+    this.service.loadEmployees();
   }
 
 }
